@@ -1,10 +1,9 @@
-## TL;DR
-
+## My Profile
 You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [shalmalee98](https://github.com/shalmalee98/MyProfile). Thanks!
 
 ## Built With
 
-My personal portfolio <a href="" target="_blank"></a> which features some of my github projects as well as my resume and technical skills.<br/>
+My personal portfolio <a href="" target="_blank">https://my-profile-15gba4o32-shalmalee98.vercel.app/project</a> which features some of my github projects as well as my resume and technical skills.<br/>
 
 This project was built using these technologies.
 
@@ -13,6 +12,7 @@ This project was built using these technologies.
 - Express.js
 - CSS3
 - VsCode
+- Vercel
 
 ## Features
 
