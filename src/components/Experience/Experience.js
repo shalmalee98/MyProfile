@@ -1,13 +1,9 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
+import { Container, Row } from "react-bootstrap";
 import Particle from "../Particle";
 import About from "../About/About";
-import Button from "react-bootstrap/Button";
-import pdf from "../../Assets/../Assets/Shalmalee_resume.pdf";
 import Projects from "../Projects/Projects";
 import ResumeNew from "../Resume/ResumeNew";
-import myImg from "../../Assets/profile.jpg";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { SiWorkplace } from "react-icons/si";
@@ -19,10 +15,13 @@ function Experience() {
         <Particle />
         <Container className="home-content">
           <Row>
+        <h1 className="project-heading" style={{textAlign: 'center'}}>
+          <strong className="purple">Experience</strong>
+        </h1>
           <VerticalTimeline>
           <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                contentStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                 date="May 2023 - August 2023"
                 iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
@@ -75,7 +74,7 @@ releases and elevated code quality for seamless project delivery </h6>
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                contentStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                 date="June 2019 - August 2019"
                 iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
@@ -104,10 +103,6 @@ real-time news to facilitate cloud deployment.
 
         </Container>
       </Container>
-      {/* <Home2 /> */}
-      <About/>
-      <Projects/>
-      <ResumeNew/>
     </section>
   );
 }

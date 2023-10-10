@@ -1,24 +1,18 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
-import Home2 from "./Home2";
 import Type from "./Type";
 import About from "../About/About";
 import { AiOutlineDownload } from "react-icons/ai";
 import Button from "react-bootstrap/Button";
 import pdf from "../../Assets/../Assets/Shalmalee_resume.pdf";
+import myImg from "../../Assets/profile.jpg";
+import Experience from "../Experience/Experience";
+import { pdfjs } from "react-pdf";
+import Education from "../Education/Education";
 import Projects from "../Projects/Projects";
 import ResumeNew from "../Resume/ResumeNew";
-import myImg from "../../Assets/profile.jpg";
-import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
-import Experience from "../Experience/Experience";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function Home() {
   return (
@@ -48,7 +42,7 @@ function Home() {
                   variant="primary"
                   href={pdf}
                   target="_blank"
-                  style={{ maxWidth: "400px" }}
+                  style={{ maxWidth: "250px" }}
                 >
                   <AiOutlineDownload />
                   &nbsp;Download CV
@@ -57,21 +51,11 @@ function Home() {
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
-              {/* <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
-              /> */}
-              {/* <Tilt> */}
               <img style={{
                 borderRadius: "50%",
                 width: 400,
-                // height: 300,
-                // background: "red",
                 display: "block"
               }} src={myImg} className="img-fluid" alt="avatar" />
-            {/* </Tilt> */}
             </Col>
             
           </Row>
@@ -80,6 +64,7 @@ function Home() {
       </Container>
       {/* <Home2 /> */}
       <About/>
+      <Education/>
       <Experience/>
       <Projects/>
       <ResumeNew/>

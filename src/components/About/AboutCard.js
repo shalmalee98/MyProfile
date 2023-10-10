@@ -12,21 +12,20 @@ function AboutCard() {
             from <span className="purple"> Buffalo, NY, USA.</span>
             <br /> I am a masters' student pursuing Computer Science at State University of New York, University at Buffalo
             <br />
-            Additionally, I am currently employed as a software developer at
-            Juspay.
+            Additionally, I am currently a student at University at Buffalo.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> Reading
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <ImPointRight /> Sketching
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Hiking
             </li>
           </ul>
 
