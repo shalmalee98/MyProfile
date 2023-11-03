@@ -30,7 +30,8 @@ import {
   SiExpress,
   SiChai,
   SiMocha,
-  SiGraphql
+  SiGraphql,
+  SiKubernetes
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
 
@@ -88,6 +89,10 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <DiJava />
         <h5>Java</h5>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+      <SiKubernetes/>
+      <h5>Kubernetes</h5>
       </Col>
     </Row>
   );

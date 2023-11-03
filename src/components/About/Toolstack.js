@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { DiBitbucket, DiGithub } from "react-icons/di";
+import { DiBitbucket, DiDocker, DiGithub } from "react-icons/di";
 import {
   SiVisualstudiocode,
   SiPostman,
@@ -47,6 +47,10 @@ function Toolstack() {
       <Col xs={4} md={2} className="tech-icons">
         <DiBitbucket/>
         <h5>Bitbucket</h5>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+      <DiDocker/>
+      <h5>Docker</h5>
       </Col>
     </Row>
   );
