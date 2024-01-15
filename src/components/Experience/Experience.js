@@ -35,10 +35,14 @@ RESTful APIs, enhancing workflows and accessibility. Optimized deployment effici
 Docker, AWS, and Terraform, streamlining software delivery.
                 </h6>
                 <h6>
-                • Designed scalable AWS Lambda architecture, leveraging Kinesis, S3, RDS, Step Functions, and API Gateway for
-serverless Data Integration streams, ensuring high-performance transaction management and data integrity </h6>
+                • Led the development of a real-time communication system connecting labs, doctors, and patients,
+optimizing information flow and boosting deployment efficiency by 60%
+                </h6>
                 <h6>
-                • Conducted thorough testing using Mocha and Chai, resulting in a 95% reduction in critical errors, ensuring code
+                • Designed scalable AWS Lambda architecture, leveraging Kinesis, S3, RDS, Step Functions, and API Gateway for
+streamlined lab data processing, real-time report generation and high-performance data integration </h6>
+                <h6>
+                • Conducted thorough testing using Mocha, Chai and Selenium, resulting in a 95% reduction in critical errors, ensuring code
 reliability and functionality. </h6>
                 <h6>
                 • Enhanced workflows using GitHub Actions for CI/CD, automating build, test, and deployment, leading to 40% faster

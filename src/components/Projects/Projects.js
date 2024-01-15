@@ -39,6 +39,7 @@ function Projects() {
               isBlog={false}
               title="Northstar (University at Buffalo)"
               description=" Crafted React-powered mobile and web apps for curated research paper collections with level assignments. Seamlessly integrated neo4j APIs for robust data storage, elevating authentication by 40%. Spearheaded a platform enabling collection sharing, propelling an 80% surge in user engagement"
+              demoLink='https://alasia.info/'
             />
           </Col>
 
