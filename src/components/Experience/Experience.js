@@ -68,7 +68,8 @@ function Experience() {
                 iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
                 icon={<SiWorkplace />}
             >
-                <h3 className="vertical-timeline-element-title">Roche Molecular Systems - Software Developer Intern</h3>
+                <h3 className="vertical-timeline-element-title">Roche Molecular Systems</h3>
+                <h5 className="vertical-timeline-element-title">Software Developer Intern</h5>
                 <h5 style={{color: 'darkblue'}}>Santa Clara, CA, US</h5>
                 <h6>
                 • Orchestrated secure patient EHR data access for 300+ clinicians through FHIR RESTful APIs.
@@ -90,7 +91,8 @@ function Experience() {
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<SiWorkplace />}
             >
-                <h3 className="vertical-timeline-element-title">Rocket Software - Software Developer</h3>
+                <h3 className="vertical-timeline-element-title">Rocket Software</h3>
+                <h5 className="vertical-timeline-element-title">Software Developer</h5>
                 <h5 style={{color: 'darkblue'}}>Pune, India</h5>
                 <h6>
                 • Constructed scalable NodeJS REST APIs using React, Elasticsearch, Kafka, Go, Jenkins, for features like notification, filters, dashboard, tables, automated data processing with 99% accuracy.
@@ -113,7 +115,8 @@ function Experience() {
                 iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
                 icon={<SiWorkplace />}
             >
-                <h3 className="vertical-timeline-element-title">Rocket Software - Software Developer Intern</h3>
+                <h3 className="vertical-timeline-element-title">Rocket Software</h3>
+                <h5 className="vertical-timeline-element-title">Software Developer Intern</h5>
                 <h5 style={{color: 'darkblue'}}>Pune, India</h5>
                 <h6>
                 • Created a cloud-ready, multi-lingual Android app and backend system to streamline the farming workflow and real-time
