@@ -12,6 +12,7 @@ import { pdfjs } from "react-pdf";
 import Education from "../Education/Education";
 import Projects from "../Projects/Projects";
 import ResumeNew from "../Resume/ResumeNew";
+import AboutCard from "../About/AboutCard";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function Home() {
@@ -63,6 +64,7 @@ function Home() {
         </Container>
       </Container>
       {/* <Home2 /> */}
+      <AboutCard/>
       <About/>
       <Education/>
       <Experience/>

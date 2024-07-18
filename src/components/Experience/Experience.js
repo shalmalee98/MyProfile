@@ -21,6 +21,47 @@ function Experience() {
           <VerticalTimeline>
           <VerticalTimelineElement
                 className="vertical-timeline-element--work"
+                contentStyle={{ background: '#C70039', color: '#fff' }}
+                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                date="May 2024 - Present"
+                iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+                icon={<SiWorkplace />}
+            >
+                <h3 className="vertical-timeline-element-title">Capital Market Solutions LLC</h3>
+                <h5 className="vertical-timeline-element-title">Software Engineer</h5>
+                <h5 style={{color: 'darkblue'}}>Remote, NJ, US</h5>
+                <h6>
+                • Designed user-friendly UI components with PrimeNG, Material, Bootstrap using Angular v15.
+                </h6>
+                <h6>
+                • Created ETL pipelines for Regulatory Surveillance Management System product identifying daily shares transaction exceptions and resolves it using Spring Boot, Java, MySQL, JWT token.
+                </h6>
+            </VerticalTimelineElement>
+
+            <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                contentStyle={{ background: '#FFC300', color: '#fff' }}
+                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                date="September 2022 - Present"
+                iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+                icon={<SiWorkplace />}
+            >
+                <h3 className="vertical-timeline-element-title">X-Lab (University at Buffalo)</h3>
+                <h5 className="vertical-timeline-element-title">Research Intern</h5>
+                <h5 style={{color: 'darkblue'}}>Buffalo, NY, US</h5>
+                <h6>
+                • Spearheaded a comprehensive healthcare platform for clinical trial management, utilizing React.js, Node.js, React Native, MongoDB, Docker, and Kubernetes, featuring tailored questionnaires, targeted user groups, notifications, data collection, data visualisation, deployed on AppStore.
+                </h6>
+                <h6>
+                • Crafted TailwindCSS, React, Node and React Native powered mobile and web app for research paper collections with graded assignments, boosting accessibility with 80% surge in user engagement.
+                </h6>
+                <h6>
+                • Integrated Neo4j APIs to establish robust data storage framework, while leveraging Firebase and OAuth2 to improve authentication security by 98%, ensuring data integrity and user trust.
+                </h6>
+            </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+                className="vertical-timeline-element--work"
                 contentStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                 date="May 2023 - August 2023"
@@ -28,25 +69,18 @@ function Experience() {
                 icon={<SiWorkplace />}
             >
                 <h3 className="vertical-timeline-element-title">Roche Molecular Systems - Software Developer Intern</h3>
-                <h5 style={{color: 'darkblue'}}>Santa Clara, CA</h5>
+                <h5 style={{color: 'darkblue'}}>Santa Clara, CA, US</h5>
                 <h6>
-                • Empowered 300+ clinicians with secure patient data access via seamless healthcare system integration using ExpressJS
-RESTful APIs, enhancing workflows and accessibility. Optimized deployment efficiency by 60% using Roche Navify,
-Docker, AWS, and Terraform, streamlining software delivery.
+                • Orchestrated secure patient EHR data access for 300+ clinicians through FHIR RESTful APIs.
                 </h6>
                 <h6>
-                • Led the development of a real-time communication system connecting labs, doctors, and patients,
-optimizing information flow and boosting deployment efficiency by 60%
+                • Led the development of a real-time communication system connecting labs, doctors, patients, optimizing information flow and boosting deployment efficiency by 60% with Docker, K8s.
                 </h6>
                 <h6>
-                • Designed scalable AWS Lambda architecture, leveraging Kinesis, S3, RDS, Step Functions, and API Gateway for
-streamlined lab data processing, real-time report generation and high-performance data integration </h6>
+                • Inspired the team to adopt AWS tech like Kinesis, SNS, SQS, API Gateway, Step Functions for streamlined lab data processing, real-time report generation & high-performance data integration.
+                </h6>
                 <h6>
-                • Conducted thorough testing using Mocha, Chai and Selenium, resulting in a 95% reduction in critical errors, ensuring code
-reliability and functionality. </h6>
-                <h6>
-                • Enhanced workflows using GitHub Actions for CI/CD, automating build, test, and deployment, leading to 40% faster
-releases and elevated code quality for seamless project delivery </h6>
+                • Executed robust Selenium, Mocha, Chai testing, reducing errors by 95% for enhanced reliability. </h6>
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
@@ -56,31 +90,26 @@ releases and elevated code quality for seamless project delivery </h6>
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<SiWorkplace />}
             >
-                <h3 className="vertical-timeline-element-title">Rocket SOftware - Software Developer</h3>
+                <h3 className="vertical-timeline-element-title">Rocket Software - Software Developer</h3>
                 <h5 style={{color: 'darkblue'}}>Pune, India</h5>
                 <h6>
-                • Constructed NodeJS REST APIs with asynchronous functions to enhance scalability for features like notifications and
-                dashboards and facilitated automated data processing with an accuracy rate of 95%.
+                • Constructed scalable NodeJS REST APIs using React, Elasticsearch, Kafka, Go, Jenkins, for features like notification, filters, dashboard, tables, automated data processing with 99% accuracy.
                 </h6>
                 <h6>
-                • Utilized ReactJS, NodeJS, Elasticsearch, Kafka & AWS to create features such as notifications, filters, authentication,
-                dashboard, tables, and forms; resulting in a 25% increase in performance. </h6>
+                •  Developed React/Redux UI app, optimizing efficiency by 40% through MaterialUI components
+                </h6>
                 <h6>
-                • Developed UI applications using React/Redux, integrating MaterialUI components alongside HTML & CSS to enhance
-                efficiency, resulting in performance improvements of up to 30%. </h6>
+                •  Implemented Jest for testing, achieving a 90% reduction in critical issues for feature robustness.
+                </h6>
                 <h6>
-                • Implemented comprehensive testing with Jest, ensuring feature robustness and boosting code reliability by achieving
-                an impressive 90% reduction in critical issues. </h6>
-                <h6>
-                • Integrated advanced tech features into Rocket’s EDX6 product, automating EDI message processing and handling
-                non-EDI file formats, resulting in a 20% reduction in manual processes.
+                • Automated EDI message processing in Rocket's EDX6, reducing manual processes by 40%.
                 </h6>
             </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
-                contentStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+                contentStyle={{ background: '#FF5733', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                date="June 2019 - August 2019"
+                date="June 2019 - August 2020"
                 iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
                 icon={<SiWorkplace />}
             >
@@ -100,6 +129,10 @@ with MySQL database
                 <h6>
                 Synthesized RESTful APIs with microservices for UI, crop workflows, farmer/agronomist messaging, authentication &
 real-time news to facilitate cloud deployment.
+                </h6>
+                <h6>
+                • Created a revolutionary Low Code Application Builder with drag-and-drop components & customizable features, using React, Spring Boot, Java, Github for fast & easy app development.
+
                 </h6>
             </VerticalTimelineElement>
             </VerticalTimeline>

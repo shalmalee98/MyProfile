@@ -51,32 +51,16 @@ function Techstack() {
         <h5>NodeJS</h5>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+        <DiHtml5 />
+        <h5>HTML5</h5>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiCss3 />
+        <h5>CSS3</h5>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
         <h5>MongoDB</h5>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiAws />
-        <h5>AWS</h5>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiTerraform />
-        <h5>Terraform</h5>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiApachekafka />
-        <h5>Apache Kafka</h5>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
-        <h5>Solidity</h5>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-        <h5>Git Github</h5>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-        <h5>Firebase</h5>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPostgresql />
@@ -91,8 +75,28 @@ function Techstack() {
         <h5>Java</h5>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+        <DiAngularSimple />
+        <h5>Angular</h5>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiApachekafka />
+        <h5>Apache Kafka</h5>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiAws />
+        <h5>AWS</h5>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiFirebase />
+        <h5>Firebase</h5>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
       <SiKubernetes/>
       <h5>Kubernetes</h5>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+      <DiDocker/>
+      <h5>Docker</h5>
       </Col>
     </Row>
   );

@@ -9,16 +9,16 @@ const educationInfo = {
         schoolName: "University at Buffalo",
         logo: require("../../Assets/ub_logo.jpg"),
         subHeader: "Master of Science in Computer Science",
-        duration: "August 2022 - December 2023",
+        duration: "August 2022 - January 2024",
         desc: "Relevant Coursework:",
         descBullets: [
-          "Algorithms for Modern Computing Systems, Data Models and Query Language Processing, Blockchain, Machine Learning, Information Retrieval, Data Intensive Computing"
+          "Algorithms for Modern Computing Systems, Data Models and Query Language Processing, Blockchain, Machine Learning, Information Retrieval, Data Intensive Computing, MS Project Development"
         ]
       },
       {
         schoolName: "University of Pune, India",
         logo: require("../../Assets/puneuniversity_logo.jpg"),
-        subHeader: "Bachelor of Technolody in Computer Science",
+        subHeader: "Bachelor of Technology in Computer Science",
         duration: "August 2016 - May 2020",
         desc: "Relevant Coursework:",
         descBullets: ["Operating Systems, Data Structures and Algorithms, Mathematics I II and III, Computer Networks, Object Oriented Programming, Artificial Intelligence and Machine Learning, Database Management Systems"]
@@ -90,7 +90,7 @@ function EducationCard({school}) {
 export default function Education() {
     if (educationInfo.display) {
       return (
-        <div id="education">
+        <div id="education" style={{marginTop:'100px'}}>
           <h1 className="project-heading">
           <strong className="purple">Education</strong>
         </h1>

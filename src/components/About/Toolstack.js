@@ -10,7 +10,8 @@ import {
   SiUbuntu,
   SiMacos,
   SiJenkins,
-  SiGithubactions
+  SiGithubactions,
+  SiLinux
 } from "react-icons/si";
 
 function Toolstack() {
@@ -19,6 +20,14 @@ function Toolstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiMacos />
         <h5>MacOS</h5>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiLinux />
+        <h5>Linux</h5>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiWindows />
+        <h5>Windows</h5>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiVisualstudiocode />
@@ -48,10 +57,7 @@ function Toolstack() {
         <DiBitbucket/>
         <h5>Bitbucket</h5>
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-      <DiDocker/>
-      <h5>Docker</h5>
-      </Col>
+      
     </Row>
   );
 }

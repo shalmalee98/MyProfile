@@ -18,6 +18,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Experience from "./components/Experience/Experience";
 import Education from "./components/Education/Education";
+import AboutCard from "./components/About/AboutCard";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -39,7 +40,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Projects />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<AboutCard />} />
+          <Route path="/skills" element={<About/>} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/experience" element={<Experience/>} />
           <Route path="/education" element={<Education/>} />
