@@ -21,9 +21,24 @@ function Experience() {
           <VerticalTimeline>
           <VerticalTimelineElement
                 className="vertical-timeline-element--work"
+                contentStyle={{ background: '#6A1B9A', color: '#fff' }}
+                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                date="May 2024 - September 2024"
+                iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+                icon={<SiWorkplace />}
+            >
+              <h3 className="vertical-timeline-element-title">Treatment Technologies & Insights Inc.</h3>
+              <h5 className="vertical-timeline-element-title">Frontend Engineer</h5>
+              <h5 style={{color: 'darkblue'}}>Los Angeles, CA, US</h5>
+              <h6>
+              • Designed and developed responsive web interfaces for cancer and chronic illness treatment portals usingPHP, Laravel, and Livewire to create seamless user experiences for admin, staff, and patients.
+              </h6>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+                className="vertical-timeline-element--work"
                 contentStyle={{ background: '#C70039', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                date="May 2024 - Present"
+                date="May 2024 - September 2024"
                 iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
                 icon={<SiWorkplace />}
             >
@@ -42,7 +57,7 @@ function Experience() {
                 className="vertical-timeline-element--work"
                 contentStyle={{ background: '#FFC300', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                date="September 2022 - Present"
+                date="September 2022 - September 2024"
                 iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
                 icon={<SiWorkplace />}
             >
