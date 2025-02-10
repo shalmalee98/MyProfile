@@ -70,7 +70,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={leaf}
-              isBlog={false}
+              isBlog={null}
               title="Intruder Detection System for Smart Homes (CCOEW, Pune)"
               description="Created an Automatic Visitor Monitoring System using IoT facilitating devices like PIR Sensor, Pi Camera and Raspberry Pi Minicomputer. When visitor comes near the door, sensor will sense his/her presence, capture visitor image and
               email it as attachment to user using ssmtp, mailutils, MIME."
@@ -80,7 +80,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={suicide}
-              isBlog={false}
+              isBlog={null}
               title="Interface for sanctions screening of transactions (CitiCorp, Pune)"
               description="Created an interface for sanctions screening of transactions against a predefined list of keywords to detect fraudful
               transactions and block them or authorize them using JavaServlets, JSP, mySQl, Apache Tomcat and AngularJS."
