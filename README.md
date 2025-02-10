@@ -3,7 +3,7 @@ You can fork this repo to modify and make changes of your own. Please give me pr
 
 ## Built With
 
-My personal portfolio <a href="" target="_blank">https://my-profile-k7xohuqg5-shalmalee98.vercel.app/</a> which features some of my github projects as well as my resume and technical skills.<br/>
+My personal portfolio <a href="" target="_blank">shalmalee98.github.io/MyProfile/</a> which features some of my github projects as well as my resume and technical skills.<br/>
 
 This project was built using these technologies.
 
