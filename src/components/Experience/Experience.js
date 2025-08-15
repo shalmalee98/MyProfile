@@ -1,128 +1,139 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 import Particle from "../Particle";
-import About from "../About/About";
-import Projects from "../Projects/Projects";
-import ResumeNew from "../Resume/ResumeNew";
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 import { SiWorkplace } from "react-icons/si";
 
 function Experience() {
+  const experiences = [
+    {
+      date: "Sept 2024 – Present",
+      company: "Treatment Technologies & Insights Inc.",
+      role: "Frontend Engineer",
+      location: "San Francisco, CA, US",
+      bullets: [
+        "Led end-to-end development of a scalable Care Portal (React, TypeScript, Node.js, Laravel, Livewire, AWS) serving 5+ organizations, multiple sites, and 10K+ patients & clinicians.",
+        "Architected reusable UI components (Tailwind CSS, Redux, Livewire), reducing rendering latency by 37%.",
+        "Integrated secure auth workflows with OAuth2, MFA, and SSO, ensuring HIPAA compliance and cutting compliance vulnerabilities by 41%.",
+        "Migrated from server-side rendering to Inertia.js, doubling development speed and raising productivity by 23%."
+      ]
+    },
+    {
+      date: "May 2024 – Sept 2024",
+      company: "Capital Market Solutions LLC",
+      role: "Software Engineer Intern",
+      location: "San Francisco, CA, US",
+      bullets: [
+        "Revamped RSMS UI components, improving FINRA exception detection and resolution efficiency by 17%.",
+        "Streamlined workflows with Java, J2EE, Angular v15, boosting efficiency and user engagement by 25%."
+      ]
+    },
+    {
+      date: "Sept 2022 – Sept 2024",
+      company: "X-Lab (University at Buffalo)",
+      role: "Research Intern",
+      location: "Buffalo, NY, US",
+      bullets: [
+        "Led a team to develop a clinical trial management platform, reducing trial setup time by 30%.",
+        "Built iOS & web apps with React Native, Node.js, TailwindCSS, Vite, enhancing accessibility and user experience.",
+        "Boosted scalability and reliability using Docker and Kubernetes.",
+        "Automated deployments and streamlined workflows via GitHub Actions."
+      ]
+    },
+    {
+      date: "May 2023 – Aug 2023",
+      company: "Roche Molecular Systems",
+      role: "Software Engineer Intern",
+      location: "Santa Clara, CA, US",
+      bullets: [
+        "Enabled secure EMR/EHR data access for 300+ clinicians via Roche APIs and FHIR RESTful standards.",
+        "Architected a real-time communication system with AWS serverless, reducing latency by 60%.",
+        "Improved system reliability by 95% through comprehensive testing with Selenium and Mocha."
+      ]
+    },
+    {
+      date: "Oct 2020 – Jul 2022",
+      company: "Rocket Software",
+      role: "Software Developer",
+      location: "Pune, India",
+      bullets: [
+        "Designed scalable Python REST APIs with Elasticsearch and Kafka, achieving 99% data processing accuracy.",
+        "Built a React.js + Redux app with Material UI, improving efficiency by 40%.",
+        "Reduced critical issues by 90% through Jest testing and automated EDI workflows, cutting manual work by 48%.",
+        "Enhanced UX using Figma, Material UI, and Bootstrap; optimized performance with Webpack, Babel, npm, and Axios."
+      ]
+    }
+  ];
+
   return (
     <section>
       <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">
           <Row>
-        <h1 className="project-heading" style={{textAlign: 'center'}}>
-          <strong className="purple">Experience</strong>
-        </h1>
-          <VerticalTimeline>
-          <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                contentStyle={{ background: '#9125d2', color: '#fff' }}
-                contentArrowStyle={{ borderRight: '7px solid  #9125d2' }}
-                date="May 2024 - September 2024"
-                iconStyle={{ background: '#9125d2', color: '#fff' }}
-                icon={<SiWorkplace />}
-            >
-              <h3 className="vertical-timeline-element-title">Treatment Technologies & Insights Inc.</h3>
-              <h5 className="vertical-timeline-element-title">Frontend Engineer</h5>
-              <h5 style={{color: 'darkblue'}}>Los Angeles, CA, US</h5>
-              <h6> • Solely developed the web HCP Care Portal for Wave Health delivering a fully functional system in 4 months. </h6>
-              <h6> • Optimized features like administration, role hierarchies, and authentication, boosting user adoption by 41%. </h6>
-              <h6> • Expanded users by 37% with accurate tracking of questionnaires, vitals, activity logs & 45% improved efficiency. </h6>
-              <h6> • Optimized performance with PHP, Laravel, Livewire, HTML, CSS, cutting load times, boosting workflow by 60%. </h6>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                contentStyle={{ background: '#9125d2', color: '#fff' }}
-                contentArrowStyle={{ borderRight: '7px solid  #9125d2' }}
-                date="May 2024 - September 2024"
-                iconStyle={{ background: '#9125d2', color: '#fff' }}
-                icon={<SiWorkplace />}
-            >
-                <h3 className="vertical-timeline-element-title">Capital Market Solutions LLC</h3>
-                <h5 className="vertical-timeline-element-title">Software Engineer Intern</h5>
-                <h5 style={{color: 'darkblue'}}>NJ, US (Remote)</h5>
-                <h6>
-                • Revamped UI components for RSMS, improving FINRA exception detection & resolution efficiency by 30%.
-                </h6>
-                <h6>
-                • Streamlined workflows with PrimeNG, Bootstrap, Angular v15, boosting efficiency & user engagement by 25%.
-                </h6>
-            </VerticalTimelineElement>
-
-            <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                contentStyle={{ background: '#9125d2', color: '#fff' }}
-                contentArrowStyle={{ borderRight: '7px solid  #9125d2' }}
-                date="September 2022 - September 2024"
-                iconStyle={{ background: '#9125d2', color: '#fff' }}
-                icon={<SiWorkplace />}
-            >
-                <h3 className="vertical-timeline-element-title">X-Lab (University at Buffalo)</h3>
-                <h5 className="vertical-timeline-element-title">Research Intern</h5>
-                <h5 style={{color: 'darkblue'}}>Buffalo, NY, US</h5>
-                <h6>
-                • Led the development of a clinical trial management platform using MongoDB, reducing trial setup time by 30%.
-                </h6>
-                <h6>
-                • Built mobile and web apps with React Native, Node.js, TailwindCSS, enhancing accessibility & user experience.
-                </h6>
-                <h6>
-                • Enhanced data security by 98% using Neo4j, Firebase, OAuth2, & automated deployments via GitHub Actions.
-                </h6>
-            </VerticalTimelineElement>
-
-          <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                contentStyle={{ background: '#9125d2', color: '#fff' }}
-                contentArrowStyle={{ borderRight: '7px solid  #9125d2' }}
-                date="May 2023 - August 2023"
-                iconStyle={{ background: '#9125d2', color: '#fff' }}
-                icon={<SiWorkplace />}
-            >
-                <h3 className="vertical-timeline-element-title">Roche Molecular Systems</h3>
-                <h5 className="vertical-timeline-element-title">Software Developer Intern</h5>
-                <h5 style={{color: 'darkblue'}}>Santa Clara, CA, US</h5>
-                <h6>
-                • Enabled secure EMR/EHR data access & integrated Roche APIs for 300+ clinicians using FHIR RESTful APIs
-                </h6>
-                <h6>
-                • Architected a real-time communication system with AWS serverless tech, cutting data transfer latency by 60%.
-                </h6>
-                <h6>
-                • Reduced errors by 95% through comprehensive testing with Selenium, Mocha, Chai, boosting system reliability
-                </h6>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                contentStyle={{ background: '#9125d2', color: '#fff' }}
-                contentArrowStyle={{ borderRight: '7px solid  #9125d2' }}
-                date="May 2019 - July 2022"
-                iconStyle={{ background: '#9125d2', color: '#fff' }}
-                icon={<SiWorkplace />}
-            >
-                <h3 className="vertical-timeline-element-title">Rocket Software</h3>
-                <h5 className="vertical-timeline-element-title">Software Developer</h5>
-                <h5 style={{color: 'darkblue'}}>Pune, India</h5>
-                <h6>
-                • Designed scalable Node.js REST APIs with Elasticsearch, Kafka, automating data processing with 99% accuracy.
-                </h6>
-                <h6>
-                • Developed a React.js + Redux app, boosting efficiency by 40% with MaterialUI for a smooth, responsive UI.
-                </h6>
-                <h6>
-                • Reduced critical issues by 90% using Jest for testing, & automated EDI processing, cutting manual work by 48%.
-                </h6>
-            </VerticalTimelineElement>
+            <h1 className="project-heading" style={{ textAlign: "center", marginBottom: "40px" }}>
+              <strong className="purple">Experience</strong>
+            </h1>
+            <VerticalTimeline>
+              {experiences.map((exp, idx) => (
+                <VerticalTimelineElement
+                  key={idx}
+                  className="vertical-timeline-element--work"
+                  contentStyle={{
+                    background: "linear-gradient(135deg, #ffffff, #f8f9fc)",
+                    color: "#333",
+                    borderRadius: "12px",
+                    boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
+                    padding: "20px"
+                  }}
+                  contentArrowStyle={{ borderRight: "7px solid #f8f9fc" }}
+                  date={exp.date}
+                  dateClassName="experience-date"
+                  iconStyle={{
+                    background: "linear-gradient(135deg, #8e44ad, #9b59b6)",
+                    color: "#fff",
+                    boxShadow: "0 0 8px rgba(155, 89, 182, 0.6)"
+                  }}
+                  icon={<SiWorkplace />}
+                >
+                  <h3 className="vertical-timeline-element-title" style={{ color: "#8e44ad" }}>
+                    {exp.company}
+                  </h3>
+                  <h5 className="vertical-timeline-element-title" style={{ marginBottom: "5px" }}>
+                    {exp.role}
+                  </h5>
+                  <h6 style={{ color: "#34495e", marginBottom: "15px" }}>{exp.location}</h6>
+                  <ul style={{ paddingLeft: "20px", margin: 0 }}>
+                    {exp.bullets.map((point, i) => (
+                      <li
+                        key={i}
+                        style={{
+                          fontSize: "0.95rem",
+                          lineHeight: "1.6rem",
+                          marginBottom: "8px"
+                        }}
+                      >
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
+                </VerticalTimelineElement>
+              ))}
             </VerticalTimeline>
           </Row>
-
         </Container>
       </Container>
+
+      <style jsx>{`
+        .purple {
+          color: #8e44ad;
+        }
+        .experience-date {
+          color: #ffff !important;
+          font-weight: 600;
+        }
+      `}</style>
     </section>
   );
 }

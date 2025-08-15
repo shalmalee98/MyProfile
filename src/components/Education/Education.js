@@ -70,7 +70,7 @@ function EducationCard({school}) {
               <p>
                 {school.duration}
               </p>
-              <p>{school.desc}</p>
+              {/* <p>{school.desc}</p> */}
               <div>
                 <ul>
                   {school.descBullets}
