@@ -36,6 +36,39 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.
 
+## 📤 Deployment to GitHub Pages
+
+**Install the gh-pages package:**
+
+`npm install --save-dev gh-pages`
+
+
+**In your package.json, add:**
+
+`"homepage": "https://<your-username>.github.io/MyProfile",`
+`"scripts": {`
+  `"predeploy": "npm run build",`
+  `"deploy": "gh-pages -d build"`
+`}`
+
+
+**Deploy to GitHub Pages:**
+
+`npm run deploy`
+
+
+**Verify GitHub Pages is enabled:**
+
+1. Go to your repository on GitHub
+
+2. Navigate to Settings → Pages
+
+3. Ensure Source is set to gh-pages branch (root)
+
+4. Wait a few minutes for the site to be published at:
+
+`https://<your-username>.github.io/MyProfile`
+
 ## Usage Instructions
 
 Open the project folder and Navigate to `/src/components/`. <br/>
