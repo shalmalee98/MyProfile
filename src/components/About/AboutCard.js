@@ -1,43 +1,55 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
 
 function AboutCard() {
   return (
-    <Card className="quote-card-view" style={{marginTop: '100px', marginBottom: '65px' }}>
+    <Card
+      className="quote-card-view"
+      style={{ marginTop: "100px", marginBottom: "65px" }}
+    >
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "center", lineHeight: 1.75 }} >
-            Hi Everyone, I am <span className="purple">Shalmalee Shenolikar </span>
-            from <span className="purple"> San Francisco, CA.</span>
-            <br /> I am a passionate <span className="purple">Full Stack Engineer</span> with a <span className="purple">Master's degree in Computer Science from the University at Buffalo</span>.  
-            
-            I specialize in <span className="purple">NodeJS, React, HTML/CSS, Javascript, Typescript, Web Developement, AWS</span>, with hands-on experience in successfully designing and optimizing complex web applications.
-            
-            My expertise includes creating innovative solutions and enhancing operational efficiency, cloud native application development.
-         
-            My goal is to make a meaningful impact with logic in an environment that values innovation and excellence.
-           
-            <br />
-            {/* Apart from coding, some other activities that I love to do! */}
-          </p>
-          {/* <ul style={{ display:'inline-block' ,textAlign: "center", lineHeight: 1.75 }} >
-            <li className="about-activity">
-              <ImPointRight /> Playing Tennis
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Sketching
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Hiking
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Singing
-            </li>
-          </ul> */}
+          <div className="about-card-intro">
+            <p>
+              Hi, I&apos;m{" "}
+              <span className="purple">Shal</span> (
+              <span className="purple">Shalmalee Shenolikar</span>
+              ). I&apos;m a frontend and full-stack engineer based in{" "}
+              <span className="purple">San Francisco, CA</span>, with a{" "}
+              <span className="purple">
+                Master&apos;s in Computer Science from the University at Buffalo
+              </span>
+              . I build and scale products across{" "}
+              <span className="purple">
+                enterprise systems, healthcare, and startups
+              </span>
+              .
+            </p>
+            <p>
+              I started at{" "}
+              <span className="purple">Rocket Software</span>, on a platform for
+              supply-chain data exchange—owning backend services and shipping
+              alongside design, QA, and product so releases stayed dependable for
+              real-world transactions. During my master&apos;s, I interned at{" "}
+              <span className="purple">Roche</span>, connecting patient records,
+              lab data, and clinicians through standardized APIs and cloud
+              pipelines so critical information was easier to access. Today I
+              lead work on{" "}
+              <span className="purple">CarePortal at Wave Health</span>{" "}
+              (Treatment Technologies &amp; Insights), from a focused frontend
+              role into full-stack ownership: legacy-to-React migration, APIs,
+              and reliability for global healthcare and public-sector partners.
+            </p>
+            <p>
+              I care about owning products end to end, tightening user
+              experience, and shipping systems that stay{" "}
+              <span className="purple">impactful, observable, and scalable</span>
+              .
+            </p>
+          </div>
 
-          <p style={{ color: "rgb(155 126 172)"}}>
-            "Strive to build things that make a difference!"{" "}
+          <p style={{ color: "rgb(155 126 172)" }}>
+            &ldquo;Build things that earn trust in production.&rdquo;
           </p>
           <footer className="blockquote-footer">Shalmalee</footer>
         </blockquote>

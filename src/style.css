@@ -248,6 +248,12 @@ button:focus {
   background-size: cover !important;
   width: 100%;
   height: 100%;
+  /* Let clicks reach page content (buttons, links) below the decorative canvas */
+  pointer-events: none !important;
+}
+
+#tsparticles canvas {
+  pointer-events: none !important;
 }
 
 .home-header {
@@ -740,4 +746,242 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+/* --------- */
+/* Experience (interactive timeline) */
+/* --------- */
+
+.experience-section-title .purple {
+  color: var(--imp-text-color) !important;
+}
+
+.experience-section-sub {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.72);
+  max-width: 520px;
+  margin: 0 auto 36px;
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+.experience-vertical-timeline .vertical-timeline-element-content {
+  box-shadow: none !important;
+  position: relative;
+  z-index: 1;
+}
+
+/* Timeline date is rendered after card content and can overlap the hit area */
+.experience-section .vertical-timeline-element-date {
+  pointer-events: none !important;
+}
+
+/* Keep the whole experience block above the global hero z-index:-1 stacking */
+.experience-section > .container-fluid.home-section {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.experience-date-on-dark {
+  color: rgba(255, 255, 255, 0.92) !important;
+  font-weight: 600 !important;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
+}
+
+.experience-tilt-wrap {
+  width: 100%;
+}
+
+.experience-card {
+  border-radius: 16px;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(20, 12, 40, 0.55)
+  );
+  border: 1px solid rgba(199, 112, 240, 0.28);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  transition: border-color 0.28s ease, box-shadow 0.28s ease,
+    transform 0.28s ease;
+  overflow: hidden;
+}
+
+.experience-card:hover {
+  border-color: rgba(199, 112, 240, 0.55);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(199, 112, 240, 0.12);
+}
+
+.experience-card--open {
+  border-color: rgba(199, 112, 240, 0.65);
+}
+
+.experience-card-inner {
+  padding: 1.35rem 1.5rem 1.25rem;
+  color: #e8e4f0;
+}
+
+.experience-company {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0 0 0.2rem;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+
+.experience-company-legal {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 0 0 0.65rem;
+  line-height: 1.35;
+}
+
+.experience-role {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 0.15rem;
+  color: var(--imp-text-color);
+}
+
+.experience-location {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 0 0 1rem;
+}
+
+.experience-headline {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.88);
+  margin: 0 0 1rem;
+}
+
+.experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.1rem;
+}
+
+.experience-tags li {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(199, 112, 240, 0.15);
+  color: #e6c7ff;
+  border: 1px solid rgba(199, 112, 240, 0.35);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.experience-card:hover .experience-tags li {
+  background: rgba(199, 112, 240, 0.22);
+}
+
+.experience-expand-btn {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  padding: 0.55rem 1rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(
+    135deg,
+    rgba(199, 112, 240, 0.45),
+    rgba(142, 68, 173, 0.55)
+  );
+  box-shadow: 0 4px 16px rgba(142, 68, 173, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.experience-expand-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.06);
+  box-shadow: 0 8px 22px rgba(142, 68, 173, 0.45);
+}
+
+.experience-expand-btn:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.65);
+  outline-offset: 3px;
+}
+
+.experience-expand-chevron {
+  font-size: 0.7rem;
+  opacity: 0.9;
+}
+
+.experience-panel {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.45s ease, opacity 0.35s ease, margin-top 0.35s ease;
+  margin-top: 0;
+  pointer-events: none;
+}
+
+.experience-panel--open {
+  max-height: 1200px;
+  opacity: 1;
+  margin-top: 1rem;
+  pointer-events: auto;
+}
+
+.experience-bullets {
+  margin: 0;
+  padding-left: 1.15rem;
+  border-left: 3px solid rgba(199, 112, 240, 0.45);
+}
+
+.experience-bullets li {
+  font-size: 0.94rem;
+  line-height: 1.58;
+  margin-bottom: 0.65rem;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.experience-bullets li:last-child {
+  margin-bottom: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .experience-card,
+  .experience-expand-btn,
+  .experience-tags li,
+  .experience-panel {
+    transition: none !important;
+  }
+
+  .experience-expand-btn:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .experience-card-inner {
+    padding: 1.1rem 1.15rem 1rem;
+  }
+
+  .experience-company {
+    font-size: 1.2rem;
+  }
+}
+
+.about-card-intro p {
+  text-align: center;
+  line-height: 1.75;
+  margin-bottom: 1.1rem;
+}
+
+.about-card-intro p:last-of-type {
+  margin-bottom: 0;
 }

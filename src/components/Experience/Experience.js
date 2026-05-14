@@ -1,139 +1,242 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row } from "react-bootstrap";
 import Particle from "../Particle";
-import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { SiWorkplace } from "react-icons/si";
+import { FaRocket, FaHeartbeat, FaFlask } from "react-icons/fa";
+import { MdScience, MdOutlineTrendingUp } from "react-icons/md";
+
+const experiences = [
+  {
+    date: "Sept 2024 – Present",
+    company: "Wave Health",
+    companyLegal: "Treatment Technologies & Insights Inc.",
+    role: "Full-stack Engineer",
+    location: "San Francisco, CA, US",
+    headline:
+      "Own CarePortal end to end—modern React UI, APIs, and HIPAA-aware workflows for global healthcare and government partners.",
+    tags: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Laravel",
+      "AWS",
+      "HIPAA",
+      "CarePortal",
+    ],
+    bullets: [
+      "Lead development of CarePortal, the core product (React, TypeScript, Node.js, Laravel, Livewire, AWS) across multiple organizations, sites, and 10K+ patients and clinicians.",
+      "Led migration from a legacy system to a modern React application, improving performance and everyday UX for patients and care teams.",
+      "Shipped secure auth (OAuth2, MFA, SSO) and reusable UI architecture (Tailwind, Redux, Livewire), reducing render latency about 37% and strengthening compliance posture.",
+      "Built scalable APIs and reliability practices as the platform serves public-sector and healthcare partners worldwide.",
+    ],
+    icon: "health",
+    accentFrom: "#c770f0",
+    accentTo: "#8e44ad",
+  },
+  {
+    date: "May 2024 – Sept 2024",
+    company: "Capital Market Solutions LLC",
+    role: "Software Engineer Intern",
+    location: "San Francisco, CA, US",
+    headline:
+      "Improved regulated capital-markets tooling—faster UI workflows and clearer exception handling for operations teams.",
+    tags: ["Java", "J2EE", "Angular", "FINRA", "Enterprise UI"],
+    bullets: [
+      "Revamped RSMS UI components, improving FINRA exception detection and resolution efficiency by about 17%.",
+      "Streamlined workflows with Java, J2EE, and Angular 15, boosting efficiency and user engagement about 25%.",
+    ],
+    icon: "finance",
+    accentFrom: "#3498db",
+    accentTo: "#2c3e50",
+  },
+  {
+    date: "Sept 2022 – Sept 2024",
+    company: "X-Lab (University at Buffalo)",
+    role: "Research Intern",
+    location: "Buffalo, NY, US",
+    headline:
+      "Research-grade web and mobile software for clinical trials—Dockerized services, automated delivery, and accessible UX.",
+    tags: ["React Native", "Node.js", "Docker", "Kubernetes", "GitHub Actions"],
+    bullets: [
+      "Led development of a clinical trial management platform, reducing trial setup time about 30%.",
+      "Built iOS and web apps with React Native, Node.js, Tailwind CSS, and Vite, improving accessibility and UX.",
+      "Improved scalability and reliability using Docker and Kubernetes; automated deployments with GitHub Actions.",
+    ],
+    icon: "lab",
+    accentFrom: "#1abc9c",
+    accentTo: "#16a085",
+  },
+  {
+    date: "May 2023 – Aug 2023",
+    company: "Roche Molecular Systems",
+    role: "Software Engineer Intern",
+    location: "Santa Clara, CA, US",
+    headline:
+      "Made healthcare data easier to use—standard APIs linking patient records, lab results, and clinicians, plus cloud pipelines for safer flow of information.",
+    tags: ["FHIR", "REST APIs", "AWS", "EMR/EHR", "Healthcare data"],
+    bullets: [
+      "Enabled secure EMR and EHR access for 300+ clinicians using Roche APIs and FHIR-aligned REST standards.",
+      "Contributed to a cloud-based data pipeline to streamline how clinical information moves between systems and stakeholders.",
+      "Improved reliability through automated testing (Selenium, Mocha) and serverless patterns on AWS, cutting latency about 60% for key paths.",
+    ],
+    icon: "science",
+    accentFrom: "#0066cc",
+    accentTo: "#004499",
+  },
+  {
+    date: "Oct 2020 – Jul 2022",
+    company: "Rocket Software",
+    role: "Software Developer",
+    location: "Pune, India",
+    headline:
+      "Backend-heavy platform work for supply-chain data exchange—stable services, real business transactions, and tight collaboration with design, QA, and product.",
+    tags: ["Python", "Kafka", "Elasticsearch", "React", "EDI"],
+    bullets: [
+      "Built and maintained backend services for a platform that powers data exchange between supply chain partners at enterprise scale.",
+      "Worked closely with design, testing, and product teams on dependable releases for high-volume transactional workloads.",
+      "Delivered Python REST APIs with Elasticsearch and Kafka; internal React and Redux tooling; automated EDI workflows that cut manual work about 48%.",
+      "Raised quality with Jest and process improvements, reducing critical defects about 90%.",
+    ],
+    icon: "rocket",
+    accentFrom: "#e67e22",
+    accentTo: "#d35400",
+  },
+];
+
+function roleIcon(kind) {
+  switch (kind) {
+    case "rocket":
+      return <FaRocket aria-hidden />;
+    case "health":
+      return <FaHeartbeat aria-hidden />;
+    case "lab":
+      return <FaFlask aria-hidden />;
+    case "science":
+      return <MdScience aria-hidden />;
+    case "finance":
+      return <MdOutlineTrendingUp aria-hidden />;
+    default:
+      return <FaRocket aria-hidden />;
+  }
+}
 
 function Experience() {
-  const experiences = [
-    {
-      date: "Sept 2024 – Present",
-      company: "Treatment Technologies & Insights Inc.",
-      role: "Frontend Engineer",
-      location: "San Francisco, CA, US",
-      bullets: [
-        "Led end-to-end development of a scalable Care Portal (React, TypeScript, Node.js, Laravel, Livewire, AWS) serving 5+ organizations, multiple sites, and 10K+ patients & clinicians.",
-        "Architected reusable UI components (Tailwind CSS, Redux, Livewire), reducing rendering latency by 37%.",
-        "Integrated secure auth workflows with OAuth2, MFA, and SSO, ensuring HIPAA compliance and cutting compliance vulnerabilities by 41%.",
-        "Migrated from server-side rendering to Inertia.js, doubling development speed and raising productivity by 23%."
-      ]
-    },
-    {
-      date: "May 2024 – Sept 2024",
-      company: "Capital Market Solutions LLC",
-      role: "Software Engineer Intern",
-      location: "San Francisco, CA, US",
-      bullets: [
-        "Revamped RSMS UI components, improving FINRA exception detection and resolution efficiency by 17%.",
-        "Streamlined workflows with Java, J2EE, Angular v15, boosting efficiency and user engagement by 25%."
-      ]
-    },
-    {
-      date: "Sept 2022 – Sept 2024",
-      company: "X-Lab (University at Buffalo)",
-      role: "Research Intern",
-      location: "Buffalo, NY, US",
-      bullets: [
-        "Led a team to develop a clinical trial management platform, reducing trial setup time by 30%.",
-        "Built iOS & web apps with React Native, Node.js, TailwindCSS, Vite, enhancing accessibility and user experience.",
-        "Boosted scalability and reliability using Docker and Kubernetes.",
-        "Automated deployments and streamlined workflows via GitHub Actions."
-      ]
-    },
-    {
-      date: "May 2023 – Aug 2023",
-      company: "Roche Molecular Systems",
-      role: "Software Engineer Intern",
-      location: "Santa Clara, CA, US",
-      bullets: [
-        "Enabled secure EMR/EHR data access for 300+ clinicians via Roche APIs and FHIR RESTful standards.",
-        "Architected a real-time communication system with AWS serverless, reducing latency by 60%.",
-        "Improved system reliability by 95% through comprehensive testing with Selenium and Mocha."
-      ]
-    },
-    {
-      date: "Oct 2020 – Jul 2022",
-      company: "Rocket Software",
-      role: "Software Developer",
-      location: "Pune, India",
-      bullets: [
-        "Designed scalable Python REST APIs with Elasticsearch and Kafka, achieving 99% data processing accuracy.",
-        "Built a React.js + Redux app with Material UI, improving efficiency by 40%.",
-        "Reduced critical issues by 90% through Jest testing and automated EDI workflows, cutting manual work by 48%.",
-        "Enhanced UX using Figma, Material UI, and Bootstrap; optimized performance with Webpack, Babel, npm, and Axios."
-      ]
-    }
-  ];
+  const [expanded, setExpanded] = useState(null);
+
+  const toggle = (idx) => {
+    setExpanded((prev) => (prev === idx ? null : idx));
+  };
 
   return (
-    <section>
-      <Container fluid className="home-section" id="home">
+    <section className="experience-section" id="experience">
+      <Container fluid className="home-section">
         <Particle />
         <Container className="home-content">
           <Row>
-            <h1 className="project-heading" style={{ textAlign: "center", marginBottom: "40px" }}>
+            <h1
+              className="project-heading experience-section-title"
+              style={{ textAlign: "center", marginBottom: "12px" }}
+            >
               <strong className="purple">Experience</strong>
             </h1>
-            <VerticalTimeline>
-              {experiences.map((exp, idx) => (
-                <VerticalTimelineElement
-                  key={idx}
-                  className="vertical-timeline-element--work"
-                  contentStyle={{
-                    background: "linear-gradient(135deg, #ffffff, #f8f9fc)",
-                    color: "#333",
-                    borderRadius: "12px",
-                    boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
-                    padding: "20px"
-                  }}
-                  contentArrowStyle={{ borderRight: "7px solid #f8f9fc" }}
-                  date={exp.date}
-                  dateClassName="experience-date"
-                  iconStyle={{
-                    background: "linear-gradient(135deg, #8e44ad, #9b59b6)",
-                    color: "#fff",
-                    boxShadow: "0 0 8px rgba(155, 89, 182, 0.6)"
-                  }}
-                  icon={<SiWorkplace />}
-                >
-                  <h3 className="vertical-timeline-element-title" style={{ color: "#8e44ad" }}>
-                    {exp.company}
-                  </h3>
-                  <h5 className="vertical-timeline-element-title" style={{ marginBottom: "5px" }}>
-                    {exp.role}
-                  </h5>
-                  <h6 style={{ color: "#34495e", marginBottom: "15px" }}>{exp.location}</h6>
-                  <ul style={{ paddingLeft: "20px", margin: 0 }}>
-                    {exp.bullets.map((point, i) => (
-                      <li
-                        key={i}
-                        style={{
-                          fontSize: "0.95rem",
-                          lineHeight: "1.6rem",
-                          marginBottom: "8px"
-                        }}
+            <p className="experience-section-sub">
+              Tap a card to explore impact and tech—built for quick scanning and
+              deeper reads.
+            </p>
+            <VerticalTimeline className="experience-vertical-timeline">
+              {experiences.map((exp, idx) => {
+                const isOpen = expanded === idx;
+                const panelId = `exp-panel-${idx}`;
+                const btnId = `exp-toggle-${idx}`;
+
+                return (
+                  <VerticalTimelineElement
+                    key={exp.company + exp.date}
+                    className="vertical-timeline-element--work experience-vte"
+                    contentStyle={{
+                      background: "transparent",
+                      boxShadow: "none",
+                      padding: 0,
+                    }}
+                    contentArrowStyle={{ display: "none" }}
+                    date={exp.date}
+                    dateClassName="experience-date experience-date-on-dark"
+                    iconStyle={{
+                      background: `linear-gradient(135deg, ${exp.accentFrom}, ${exp.accentTo})`,
+                      color: "#fff",
+                      boxShadow: `0 0 14px ${exp.accentFrom}66`,
+                    }}
+                    icon={roleIcon(exp.icon)}
+                  >
+                    <div className="experience-tilt-wrap">
+                      <article
+                        className={`experience-card ${
+                          isOpen ? "experience-card--open" : ""
+                        }`}
                       >
-                        {point}
-                      </li>
-                    ))}
-                  </ul>
-                </VerticalTimelineElement>
-              ))}
+                        <div className="experience-card-inner">
+                          <h3 className="experience-company">{exp.company}</h3>
+                          {exp.companyLegal ? (
+                            <p className="experience-company-legal">
+                              {exp.companyLegal}
+                            </p>
+                          ) : null}
+                          <h4 className="experience-role">{exp.role}</h4>
+                          <p className="experience-location">{exp.location}</p>
+                          <p className="experience-headline">{exp.headline}</p>
+                          <ul
+                            className="experience-tags"
+                            aria-label="Technologies and domains"
+                          >
+                            {exp.tags.map((tag) => (
+                              <li key={tag}>{tag}</li>
+                            ))}
+                          </ul>
+                          <button
+                            id={btnId}
+                            type="button"
+                            className="experience-expand-btn"
+                            aria-expanded={isOpen}
+                            aria-controls={panelId}
+                            onClick={() => toggle(idx)}
+                          >
+                            {isOpen ? "Hide highlights" : "View highlights"}
+                            <span
+                              className="experience-expand-chevron"
+                              aria-hidden
+                            >
+                              {isOpen ? "▲" : "▼"}
+                            </span>
+                          </button>
+                          <div
+                            id={panelId}
+                            role="region"
+                            aria-labelledby={btnId}
+                            aria-hidden={!isOpen}
+                            className={`experience-panel ${
+                              isOpen ? "experience-panel--open" : ""
+                            }`}
+                          >
+                            <ul className="experience-bullets">
+                              {exp.bullets.map((point, i) => (
+                                <li key={i}>{point}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </VerticalTimelineElement>
+                );
+              })}
             </VerticalTimeline>
           </Row>
         </Container>
       </Container>
-
-      <style jsx>{`
-        .purple {
-          color: #8e44ad;
-        }
-        .experience-date {
-          color: #ffff !important;
-          font-weight: 600;
-        }
-      `}</style>
     </section>
   );
 }
