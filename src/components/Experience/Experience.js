@@ -12,8 +12,7 @@ import { MdScience, MdOutlineTrendingUp } from "react-icons/md";
 const experiences = [
   {
     date: "Sept 2024 – Present",
-    company: "Wave Health",
-    companyLegal: "Treatment Technologies & Insights Inc.",
+    company: "Treatment Technologies & Insights Inc.",
     role: "Full-stack Engineer",
     location: "San Francisco, CA, US",
     headline:

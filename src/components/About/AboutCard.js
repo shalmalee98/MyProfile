@@ -35,8 +35,10 @@ function AboutCard() {
               lab data, and clinicians through standardized APIs and cloud
               pipelines so critical information was easier to access. Today I
               lead work on{" "}
-              <span className="purple">CarePortal at Wave Health</span>{" "}
-              (Treatment Technologies &amp; Insights), from a focused frontend
+              <span className="purple">
+                CarePortal at Treatment Technologies &amp; Insights
+              </span>
+              , from a focused frontend
               role into full-stack ownership: legacy-to-React migration, APIs,
               and reliability for global healthcare and public-sector partners.
             </p>
