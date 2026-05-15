@@ -35,6 +35,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--bg-root);
 }
 
 body {
@@ -46,6 +47,12 @@ body {
   color: var(--text-primary);
   font-size: 1.0625rem;
   line-height: 1.65;
+  min-height: 100%;
+}
+
+#root {
+  background-color: var(--bg-root);
+  min-height: 100%;
 }
 
 .purple {
@@ -109,11 +116,15 @@ button:focus {
 /* --------- */
 /* Navbar Section  */
 /* --------- */
+.sticky,
+.navbar {
+  background-color: rgba(15, 20, 25, 0.97) !important;
+  border-bottom: 1px solid var(--border-subtle) !important;
+}
+
 .sticky {
-  background-color: rgba(15, 20, 25, 0.92) !important;
   transition: all 0.25s ease-out 0s !important;
   box-shadow: var(--shadow-sm) !important;
-  border-bottom: 1px solid var(--border-subtle) !important;
   backdrop-filter: blur(14px) !important;
 }
 
@@ -122,7 +133,25 @@ button:focus {
   transition: all 0.25s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
   font-size: 1.05rem !important;
+}
+
+/* Bootstrap defaults navbar/collapse to white */
+.navbar.navbar-expand-md,
+.navbar .navbar-collapse,
+.navbar .navbar-nav {
   background-color: transparent !important;
+}
+
+@media (max-width: 767px) {
+  .navbar .navbar-collapse.show,
+  .navbar .navbar-collapse.collapsing {
+    background-color: var(--bg-elevated) !important;
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid var(--border-subtle);
+    border-top: none;
+  }
 }
 
 .navbar-toggler {
@@ -562,8 +591,52 @@ button:focus {
   position: relative;
   padding-top: clamp(4.25rem, 10vw, 6.25rem) !important;
   padding-bottom: clamp(2.25rem, 5vw, 3.75rem) !important;
+  background-color: var(--bg-root) !important;
   background-image: var(--section-background-color) !important;
   color: var(--text-primary);
+}
+
+/* Standalone tab routes: fill viewport below navbar */
+.route-page {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.route-page-about .about-card-reveal {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  max-width: 52rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Nested page-sections on routed pages: avoid double padding/background gaps */
+.route-page .page-section,
+.route-page.project-section,
+.route-page.about-section,
+.route-page.resume-section {
+  padding-top: 1.5rem !important;
+  min-height: auto;
+  background-image: none !important;
+  background-color: transparent !important;
+}
+
+.route-page .experience-section.page-section {
+  padding-top: 0 !important;
+}
+
+.route-page .education-block.page-section {
+  padding-top: 0 !important;
+}
+
+/* Experience tab: inner container must not pull in hero photo background */
+.route-page .home-section:not(#home) {
+  background-image: none !important;
+  background-color: transparent !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .section-lead {

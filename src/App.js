@@ -19,6 +19,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Experience from "./components/Experience/Experience";
 import Education from "./components/Education/Education";
 import AboutCard from "./components/About/AboutCard";
+import PageLayout from "./components/PageLayout";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -39,12 +40,12 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/project" element={<Projects />} />
-          <Route path="/about" element={<AboutCard />} />
-          <Route path="/skills" element={<About/>} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/experience" element={<Experience/>} />
-          <Route path="/education" element={<Education/>} />
+          <Route path="/project" element={<PageLayout><Projects /></PageLayout>} />
+          <Route path="/about" element={<PageLayout className="route-page-about"><AboutCard /></PageLayout>} />
+          <Route path="/skills" element={<PageLayout><About /></PageLayout>} />
+          <Route path="/resume" element={<PageLayout><Resume /></PageLayout>} />
+          <Route path="/experience" element={<PageLayout><Experience /></PageLayout>} />
+          <Route path="/education" element={<PageLayout><Education /></PageLayout>} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />

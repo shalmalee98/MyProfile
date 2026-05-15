@@ -1,7 +1,9 @@
 .App {
   text-align: center;
   min-height: 100vh;
+  min-height: 100dvh;
   background-color: var(--bg-root, #0f1419);
+  background-image: var(--section-background-color, none);
   color: var(--text-primary, #f0f4f8);
 }
 
