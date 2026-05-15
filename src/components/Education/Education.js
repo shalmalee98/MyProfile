@@ -1,6 +1,7 @@
 import React, {createRef} from "react";
 import { Slide} from "react-reveal";
 import { Row, Col } from "react-bootstrap";
+import RevealOnScroll from "../RevealOnScroll";
 
 const educationInfo = {
     display: true, // Set false to hide this section, defaults to true
@@ -90,7 +91,8 @@ function EducationCard({school}) {
 export default function Education() {
     if (educationInfo.display) {
       return (
-        <div id="education" style={{marginTop:'100px'}}>
+        <RevealOnScroll>
+        <div id="education" className="page-section education-block">
           <h1 className="project-heading">
           <strong className="purple">Education</strong>
         </h1>
@@ -100,6 +102,7 @@ export default function Education() {
             ))}
           </div>
         </div>
+        </RevealOnScroll>
       );
     }
     return null;

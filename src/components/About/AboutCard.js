@@ -1,12 +1,11 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
+import RevealOnScroll from "../RevealOnScroll";
 
 function AboutCard() {
   return (
-    <Card
-      className="quote-card-view about-card-pro"
-      style={{ marginTop: "100px", marginBottom: "65px" }}
-    >
+    <RevealOnScroll className="about-card-reveal">
+      <Card className="quote-card-view about-card-pro">
       <Card.Body className="about-card-body">
         <p className="about-card-eyebrow">About</p>
         <h2 className="about-card-heading">
@@ -59,6 +58,7 @@ function AboutCard() {
         </footer>
       </Card.Body>
     </Card>
+    </RevealOnScroll>
   );
 }
 

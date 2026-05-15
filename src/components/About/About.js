@@ -6,12 +6,14 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import RevealOnScroll from "../RevealOnScroll";
 
 function About() {
   return (
-    <Container fluid className="about-section">
+    <Container fluid className="about-section page-section">
       <Particle />
-      <Container>
+      <RevealOnScroll>
+      <Container className="about-section-inner">
         {/* <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
             md={7}
@@ -47,6 +49,7 @@ function About() {
 {/* 
         <Github /> */}
       </Container>
+      </RevealOnScroll>
     </Container>
   );
 }

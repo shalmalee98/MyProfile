@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row } from "react-bootstrap";
 import Particle from "../Particle";
+import RevealOnScroll from "../RevealOnScroll";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -137,9 +138,10 @@ function Experience() {
   };
 
   return (
-    <section className="experience-section" id="experience">
+    <section className="experience-section page-section" id="experience">
       <Container fluid className="home-section">
         <Particle />
+        <RevealOnScroll>
         <Container className="home-content">
           <Row>
             <h1
@@ -244,6 +246,7 @@ function Experience() {
             </VerticalTimeline>
           </Row>
         </Container>
+        </RevealOnScroll>
       </Container>
     </section>
   );

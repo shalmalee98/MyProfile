@@ -21,7 +21,7 @@ function Home() {
       <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">
-          <Row>
+          <Row className="hero-row-animate">
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
                 Hi There!{" "}
@@ -68,12 +68,12 @@ function Home() {
         </Container>
       </Container>
       {/* <Home2 /> */}
-      <AboutCard/>
-      <About/>
-      <Education/>
-      <Experience/>
-      <Projects/>
-      <ResumeNew/>
+      <AboutCard />
+      <About />
+      <Education />
+      <Experience />
+      <Projects />
+      <ResumeNew />
     </section>
   );
 }
