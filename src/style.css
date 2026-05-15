@@ -705,6 +705,117 @@ button:focus {
   background-color: var(--bg-card) !important;
 }
 
+/* About card: professional layout + subtle motion for interest */
+.about-card-pro {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+.about-card-pro::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    125deg,
+    rgba(78, 161, 240, 0.45),
+    rgba(148, 163, 184, 0.12) 40%,
+    rgba(78, 161, 240, 0.35) 100%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0.85;
+}
+
+.about-card-body {
+  position: relative;
+  z-index: 1;
+  padding: 2rem 1.75rem 1.75rem !important;
+}
+
+@media (min-width: 768px) {
+  .about-card-body {
+    padding: 2.25rem 2.5rem 2rem !important;
+  }
+}
+
+.about-card-eyebrow {
+  text-align: center;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 0 0 0.75rem;
+}
+
+.about-card-heading {
+  text-align: center;
+  margin: 0 0 1.25rem;
+  line-height: 1.25;
+}
+
+.about-card-name {
+  display: block;
+  font-size: clamp(1.45rem, 3.5vw, 1.85rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.about-card-sub {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.98rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.about-card-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.about-card-pills li {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  color: var(--text-secondary);
+  background: var(--accent-soft);
+  border: 1px solid var(--border-medium);
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.about-card-pro:hover .about-card-pills li {
+  border-color: var(--accent-border);
+  color: var(--text-primary);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .about-card-pro:hover .about-card-pills li {
+    transform: translateY(-1px);
+  }
+}
+
+.about-card-signoff {
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
 .about-activity {
   list-style: none !important;
   text-align: left !important;
@@ -1101,8 +1212,12 @@ button:focus {
 
 .about-card-intro p {
   text-align: center;
-  line-height: 1.75;
-  margin-bottom: 1.1rem;
+  line-height: 1.78;
+  margin-bottom: 1.15rem;
+  font-size: 1.02rem;
+  max-width: 52rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-card-intro p:last-of-type {
@@ -1110,8 +1225,13 @@ button:focus {
 }
 
 .about-card-tagline {
-  color: var(--text-muted) !important;
+  color: var(--text-secondary) !important;
   font-style: italic;
-  font-size: 1.05rem;
-  margin-top: 1.25rem;
+  font-size: 1.08rem;
+  margin-top: 1.5rem;
+  line-height: 1.55;
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
