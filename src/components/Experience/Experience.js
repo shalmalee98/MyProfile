@@ -31,7 +31,6 @@ const experiences = [
       "Git",
       "AWS",
       "HIPAA",
-      "CarePortal",
     ],
     bullets: [
       "Lead development of CarePortal, the core product (React, TypeScript, Node.js, Laravel, Livewire, AWS) across multiple organizations, sites, and 10K+ patients and clinicians.",
