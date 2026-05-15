@@ -16,7 +16,7 @@ const experiences = [
     role: "Full-stack Engineer",
     location: "San Francisco, CA, US",
     headline:
-      "Own CarePortal end to end—modern React UI, APIs, and HIPAA-aware workflows for global healthcare and government partners.",
+      "Own CarePortal end to end - modern React UI, APIs, and HIPAA-aware workflows for global healthcare and government partners.",
     tags: [
       "React",
       "TypeScript",
@@ -48,7 +48,7 @@ const experiences = [
     role: "Software Engineer Intern",
     location: "San Francisco, CA, US",
     headline:
-      "Improved regulated capital-markets tooling—faster UI workflows and clearer exception handling for operations teams.",
+      "Improved regulated capital-markets tooling - faster UI workflows and clearer exception handling for operations teams.",
     tags: ["Java", "J2EE", "Angular", "FINRA", "Enterprise UI"],
     bullets: [
       "Revamped RSMS UI components, improving FINRA exception detection and resolution efficiency by about 17%.",
@@ -64,7 +64,7 @@ const experiences = [
     role: "Research Intern",
     location: "Buffalo, NY, US",
     headline:
-      "Research-grade web and mobile software for clinical trials—Dockerized services, automated delivery, and accessible UX.",
+      "Research-grade web and mobile software for clinical trials - Dockerized services, automated delivery, and accessible UX.",
     tags: ["React Native", "Node.js", "Docker", "Kubernetes", "GitHub Actions"],
     bullets: [
       "Led development of a clinical trial management platform, reducing trial setup time about 30%.",
@@ -81,7 +81,7 @@ const experiences = [
     role: "Software Engineer Intern",
     location: "Santa Clara, CA, US",
     headline:
-      "Made healthcare data easier to use—standard APIs linking patient records, lab results, and clinicians, plus cloud pipelines for safer flow of information.",
+      "Made healthcare data easier to use - standard APIs linking patient records, lab results, and clinicians, plus cloud pipelines for safer flow of information.",
     tags: ["FHIR", "REST APIs", "AWS", "EMR/EHR", "Healthcare data"],
     bullets: [
       "Enabled secure EMR and EHR access for 300+ clinicians using Roche APIs and FHIR-aligned REST standards.",
@@ -98,7 +98,7 @@ const experiences = [
     role: "Software Developer",
     location: "Pune, India",
     headline:
-      "Backend-heavy platform work for supply-chain data exchange—stable services, real business transactions, and tight collaboration with design, QA, and product.",
+      "Backend-heavy platform work for supply-chain data exchange - stable services, real business transactions, and tight collaboration with design, QA, and product.",
     tags: ["Python", "Kafka", "Elasticsearch", "React", "EDI"],
     bullets: [
       "Built and maintained backend services for a platform that powers data exchange between supply chain partners at enterprise scale.",
@@ -149,7 +149,7 @@ function Experience() {
               <strong className="purple">Experience</strong>
             </h1>
             <p className="experience-section-sub">
-              Tap a card to explore impact and tech—built for quick scanning and
+              Tap a card to explore impact and tech - built for quick scanning and
               deeper reads.
             </p>
             <VerticalTimeline

@@ -14,7 +14,7 @@ function AboutCard() {
               Hi, I&apos;m{" "}
               <span className="purple">Shal</span> (
               <span className="purple">Shalmalee Shenolikar</span>
-              )—a <span className="purple">full-stack engineer</span> in{" "}
+              ) - a <span className="purple">full-stack engineer</span> in{" "}
               <span className="purple">San Francisco</span> with a{" "}
               <span className="purple">
                 Master&apos;s in Computer Science (University at Buffalo)
@@ -29,7 +29,7 @@ function AboutCard() {
               <span className="purple">
                 CarePortal at Treatment Technologies &amp; Insights
               </span>
-              —React, APIs, and dependable releases for patients and partners. I
+               - React, APIs, and dependable releases for patients and partners. I
               care about{" "}
               <span className="purple">
                 owning products end to end, crisp UX, and scalable systems
