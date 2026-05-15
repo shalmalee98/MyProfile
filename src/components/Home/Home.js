@@ -51,12 +51,16 @@ function Home() {
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
-              <img style={{
-                borderRadius: "50%",
-                width: 400,
-                display: "block"
-              }} src={myImg} className="img-fluid" alt="avatar" />
+            <Col md={5} className="home-hero-avatar" style={{ paddingBottom: 20 }}>
+              <img
+                style={{
+                  borderRadius: "50%",
+                  display: "block",
+                }}
+                src={myImg}
+                className="img-fluid"
+                alt="Shalmalee Shenolikar"
+              />
             </Col>
             
           </Row>

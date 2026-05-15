@@ -14,43 +14,31 @@ function AboutCard() {
               Hi, I&apos;m{" "}
               <span className="purple">Shal</span> (
               <span className="purple">Shalmalee Shenolikar</span>
-              ). I&apos;m a frontend and full-stack engineer based in{" "}
-              <span className="purple">San Francisco, CA</span>, with a{" "}
+              )—a <span className="purple">full-stack engineer</span> in{" "}
+              <span className="purple">San Francisco</span> with a{" "}
               <span className="purple">
-                Master&apos;s in Computer Science from the University at Buffalo
+                Master&apos;s in Computer Science (University at Buffalo)
               </span>
-              . I build and scale products across{" "}
-              <span className="purple">
-                enterprise systems, healthcare, and startups
-              </span>
-              .
+              . I build for <span className="purple">enterprise, healthcare,</span>{" "}
+              and <span className="purple">regulated</span> environments.
             </p>
             <p>
-              I started at{" "}
-              <span className="purple">Rocket Software</span>, on a platform for
-              supply-chain data exchange—owning backend services and shipping
-              alongside design, QA, and product so releases stayed dependable for
-              real-world transactions. During my master&apos;s, I interned at{" "}
-              <span className="purple">Roche</span>, connecting patient records,
-              lab data, and clinicians through standardized APIs and cloud
-              pipelines so critical information was easier to access. Today I
-              lead work on{" "}
+              <span className="purple">Rocket Software</span> (supply chain),{" "}
+              <span className="purple">Roche</span> (clinical data &amp; APIs),
+              and now{" "}
               <span className="purple">
                 CarePortal at Treatment Technologies &amp; Insights
               </span>
-              , from a focused frontend
-              role into full-stack ownership: legacy-to-React migration, APIs,
-              and reliability for global healthcare and public-sector partners.
-            </p>
-            <p>
-              I care about owning products end to end, tightening user
-              experience, and shipping systems that stay{" "}
-              <span className="purple">impactful, observable, and scalable</span>
+              —React, APIs, and dependable releases for patients and partners. I
+              care about{" "}
+              <span className="purple">
+                owning products end to end, crisp UX, and scalable systems
+              </span>
               .
             </p>
           </div>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
+          <p className="about-card-tagline">
             &ldquo;Build things that earn trust in production.&rdquo;
           </p>
           <footer className="blockquote-footer">Shalmalee</footer>

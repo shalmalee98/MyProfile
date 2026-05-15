@@ -39,8 +39,8 @@ const experiences = [
       "Built scalable APIs and reliability practices as the platform serves public-sector and healthcare partners worldwide.",
     ],
     icon: "health",
-    accentFrom: "#c770f0",
-    accentTo: "#8e44ad",
+    accentFrom: "#4ea1f0",
+    accentTo: "#3b82c4",
   },
   {
     date: "May 2024 – Sept 2024",
@@ -55,8 +55,8 @@ const experiences = [
       "Streamlined workflows with Java, J2EE, and Angular 15, boosting efficiency and user engagement about 25%.",
     ],
     icon: "finance",
-    accentFrom: "#3498db",
-    accentTo: "#2c3e50",
+    accentFrom: "#5eb0e8",
+    accentTo: "#3d7aab",
   },
   {
     date: "Sept 2022 – Sept 2024",
@@ -72,8 +72,8 @@ const experiences = [
       "Improved scalability and reliability using Docker and Kubernetes; automated deployments with GitHub Actions.",
     ],
     icon: "lab",
-    accentFrom: "#1abc9c",
-    accentTo: "#16a085",
+    accentFrom: "#4ea1f0",
+    accentTo: "#2d6aa0",
   },
   {
     date: "May 2023 – Aug 2023",
@@ -89,8 +89,8 @@ const experiences = [
       "Improved reliability through automated testing (Selenium, Mocha) and serverless patterns on AWS, cutting latency about 60% for key paths.",
     ],
     icon: "science",
-    accentFrom: "#0066cc",
-    accentTo: "#004499",
+    accentFrom: "#5eb0e8",
+    accentTo: "#3b82c4",
   },
   {
     date: "Oct 2020 – Jul 2022",
@@ -107,8 +107,8 @@ const experiences = [
       "Raised quality with Jest and process improvements, reducing critical defects about 90%.",
     ],
     icon: "rocket",
-    accentFrom: "#e67e22",
-    accentTo: "#d35400",
+    accentFrom: "#4ea1f0",
+    accentTo: "#2d6aa0",
   },
 ];
 
@@ -152,7 +152,10 @@ function Experience() {
               Tap a card to explore impact and tech—built for quick scanning and
               deeper reads.
             </p>
-            <VerticalTimeline className="experience-vertical-timeline">
+            <VerticalTimeline
+              className="experience-vertical-timeline"
+              lineColor="rgba(148, 163, 184, 0.22)"
+            >
               {experiences.map((exp, idx) => {
                 const isOpen = expanded === idx;
                 const panelId = `exp-panel-${idx}`;

@@ -8,11 +8,14 @@ function Particle() {
       params={{
         particles: {
           number: {
-            value: 160,
+            value: 72,
             density: {
               enable: true,
-              value_area: 1500,
+              value_area: 1400,
             },
+          },
+          color: {
+            value: "#4ea1f0",
           },
           line_linked: {
             enable: false,
@@ -20,16 +23,17 @@ function Particle() {
           },
           move: {
             direction: "right",
-            speed: 0.05,
+            speed: 0.04,
           },
           size: {
             value: 1,
           },
           opacity: {
+            value: 0.28,
             anim: {
               enable: true,
-              speed: 1,
-              opacity_min: 0.05,
+              speed: 0.8,
+              opacity_min: 0.06,
             },
           },
         },
