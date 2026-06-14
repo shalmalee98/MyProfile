@@ -5,9 +5,9 @@ object-assign
 */
 
 /*!
-  Copyright (c) 2018 Jed Watson.
-  Licensed under the MIT License (MIT), see
-  http://jedwatson.github.io/classnames
+	Copyright (c) 2018 Jed Watson.
+	Licensed under the MIT License (MIT), see
+	http://jedwatson.github.io/classnames
 */
 
 /**
@@ -33,7 +33,7 @@ object-assign
  */
 
 /**
- * React Router DOM v6.2.2
+ * @remix-run/router v1.23.3
  *
  * Copyright (c) Remix Software Inc.
  *
@@ -44,7 +44,18 @@ object-assign
  */
 
 /**
- * React Router v6.2.2
+ * React Router DOM v6.30.4
+ *
+ * Copyright (c) Remix Software Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ *
+ * @license MIT
+ */
+
+/**
+ * React Router v6.30.4
  *
  * Copyright (c) Remix Software Inc.
  *
