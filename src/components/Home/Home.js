@@ -5,7 +5,7 @@ import Type from "./Type";
 import About from "../About/About";
 import { AiOutlineDownload } from "react-icons/ai";
 import Button from "react-bootstrap/Button";
-import pdf from "../../Assets/../Assets/Shalmalee_resume.pdf";
+import pdf from "../../Assets/Shalmalee_resume.pdf";
 import myImg from "../../Assets/profile.jpg";
 import Experience from "../Experience/Experience";
 import { pdfjs } from "react-pdf";
