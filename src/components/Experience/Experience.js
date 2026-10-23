@@ -39,6 +39,11 @@ const experiences = [
       "Shipped secure auth (OAuth2, MFA, SSO) and reusable UI architecture (Tailwind, Redux, Livewire), reducing render latency about 37% and strengthening compliance posture.",
       "Built scalable APIs and reliability practices as the platform serves public-sector and healthcare partners worldwide.",
     ],
+    video: {
+      id: "rLe2nmhtHGM",
+      title: "CarePortal at Treatment Technologies & Insights",
+      label: "Watch CarePortal overview",
+    },
     icon: "health",
     accentFrom: "#4ea1f0",
     accentTo: "#3b82c4",
@@ -107,6 +112,11 @@ const experiences = [
       "Delivered Python REST APIs with Elasticsearch and Kafka; internal React and Redux tooling; automated EDI workflows that cut manual work about 48%.",
       "Raised quality with Jest and process improvements, reducing critical defects about 90%.",
     ],
+    video: {
+      id: "wfFuwpf9k14",
+      title: "Rocket Software product overview",
+      label: "Watch product video",
+    },
     icon: "rocket",
     accentFrom: "#4ea1f0",
     accentTo: "#2d6aa0",
@@ -132,9 +142,14 @@ function roleIcon(kind) {
 
 function Experience() {
   const [expanded, setExpanded] = useState(null);
+  const [videoOpen, setVideoOpen] = useState(null);
 
   const toggle = (idx) => {
     setExpanded((prev) => (prev === idx ? null : idx));
+  };
+
+  const toggleVideo = (idx) => {
+    setVideoOpen((prev) => (prev === idx ? null : idx));
   };
 
   return (
@@ -160,8 +175,11 @@ function Experience() {
             >
               {experiences.map((exp, idx) => {
                 const isOpen = expanded === idx;
+                const isVideoOpen = videoOpen === idx;
                 const panelId = `exp-panel-${idx}`;
                 const btnId = `exp-toggle-${idx}`;
+                const videoPanelId = `exp-video-${idx}`;
+                const videoBtnId = `exp-video-toggle-${idx}`;
 
                 return (
                   <VerticalTimelineElement
@@ -206,22 +224,38 @@ function Experience() {
                               <li key={tag}>{tag}</li>
                             ))}
                           </ul>
-                          <button
-                            id={btnId}
-                            type="button"
-                            className="experience-expand-btn"
-                            aria-expanded={isOpen}
-                            aria-controls={panelId}
-                            onClick={() => toggle(idx)}
-                          >
-                            {isOpen ? "Hide highlights" : "View highlights"}
-                            <span
-                              className="experience-expand-chevron"
-                              aria-hidden
+                          <div className="experience-actions">
+                            <button
+                              id={btnId}
+                              type="button"
+                              className="experience-expand-btn"
+                              aria-expanded={isOpen}
+                              aria-controls={panelId}
+                              onClick={() => toggle(idx)}
                             >
-                              {isOpen ? "▲" : "▼"}
-                            </span>
-                          </button>
+                              {isOpen ? "Hide highlights" : "View highlights"}
+                              <span
+                                className="experience-expand-chevron"
+                                aria-hidden
+                              >
+                                {isOpen ? "▲" : "▼"}
+                              </span>
+                            </button>
+                            {exp.video ? (
+                              <button
+                                id={videoBtnId}
+                                type="button"
+                                className="experience-video-btn"
+                                aria-expanded={isVideoOpen}
+                                aria-controls={videoPanelId}
+                                onClick={() => toggleVideo(idx)}
+                              >
+                                {isVideoOpen
+                                  ? "Hide video"
+                                  : exp.video.label || "Watch video"}
+                              </button>
+                            ) : null}
+                          </div>
                           <div
                             id={panelId}
                             role="region"
@@ -237,6 +271,31 @@ function Experience() {
                               ))}
                             </ul>
                           </div>
+                          {exp.video ? (
+                            <div
+                              id={videoPanelId}
+                              role="region"
+                              aria-labelledby={videoBtnId}
+                              aria-hidden={!isVideoOpen}
+                              className={`experience-video-panel ${
+                                isVideoOpen
+                                  ? "experience-video-panel--open"
+                                  : ""
+                              }`}
+                            >
+                              {isVideoOpen ? (
+                                <div className="experience-video-frame">
+                                  <iframe
+                                    src={`https://www.youtube-nocookie.com/embed/${exp.video.id}?rel=0`}
+                                    title={exp.video.title}
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowFullScreen
+                                    loading="lazy"
+                                  />
+                                </div>
+                              ) : null}
+                            </div>
+                          ) : null}
                         </div>
                       </article>
                     </div>
