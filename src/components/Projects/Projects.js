@@ -18,7 +18,7 @@ const projects = [
     subtitle: "University at Buffalo",
     description:
       "Built an NLP chatbot that answers questions with BERT-powered contextual replies and information-retrieval document search. Used dense vector neural search for document-query matching and ranked results by relevance, with a chitchat fallback path for off-topic prompts.",
-    // Public GitHub repo for this project is not available; omit broken link.
+    ghLink: "https://github.com/shalmalee98/IR-chatbot",
   },
   {
     imgPath: northstar,
