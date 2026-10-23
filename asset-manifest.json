@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/MyProfile/static/css/main.af1493ad.css",
-    "main.js": "/MyProfile/static/js/main.23b05760.js",
+    "main.css": "/MyProfile/static/css/main.21c56dff.css",
+    "main.js": "/MyProfile/static/js/main.96cef784.js",
     "static/js/453.3f1fb51b.chunk.js": "/MyProfile/static/js/453.3f1fb51b.chunk.js",
     "static/media/profile.jpg": "/MyProfile/static/media/profile.d040adeed1d2294df2bc.jpg",
-    "static/media/leaf.png": "/MyProfile/static/media/leaf.ff2616f664c8c0ceab91.png",
-    "static/media/emotion.png": "/MyProfile/static/media/emotion.eabfc16e7a146ab15778.png",
-    "static/media/suicide.png": "/MyProfile/static/media/suicide.9c86cd7138a398c45fa5.png",
-    "static/media/codeEditor.png": "/MyProfile/static/media/codeEditor.1b585492490c8c1cace9.png",
-    "static/media/blog.png": "/MyProfile/static/media/blog.fb8ab7f271a937d5fc01.png",
-    "static/media/Shalmalee_resume.pdf": "/MyProfile/static/media/Shalmalee_resume.b18a8ca6c792491124b5.pdf",
+    "static/media/northstar.jpg": "/MyProfile/static/media/northstar.16bcca4e21c6b2ef2fd5.jpg",
+    "static/media/app-builder.jpg": "/MyProfile/static/media/app-builder.6804d2a24808e9b9ec7d.jpg",
+    "static/media/pharma-chain.jpg": "/MyProfile/static/media/pharma-chain.354d7315e21afbfc775f.jpg",
+    "static/media/sanctions-screening.jpg": "/MyProfile/static/media/sanctions-screening.01bcc2bcf300dcfb56cf.jpg",
+    "static/media/ir-chatbot.jpg": "/MyProfile/static/media/ir-chatbot.93f0f4af8fe75dc6195f.jpg",
+    "static/media/smart-home-iot.jpg": "/MyProfile/static/media/smart-home-iot.6ec36f4b59c9fa5d0998.jpg",
+    "static/media/Shalmalee_resume.pdf": "/MyProfile/static/media/Shalmalee_resume.05ea5308b8724ffc250c.pdf",
     "static/media/about.png": "/MyProfile/static/media/about.aee0f771fbfc1e7b8fa8.png",
-    "static/media/chatify.png": "/MyProfile/static/media/chatify.7206044e0b5cdad44726.png",
     "static/media/ub_logo.jpg": "/MyProfile/static/media/ub_logo.946a0d1fb735ab278758.jpg",
     "static/media/home-bg.jpg": "/MyProfile/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
     "static/media/puneuniversity_logo.jpg": "/MyProfile/static/media/puneuniversity_logo.55016bbce1afd394533b.jpg",
     "static/media/pre.svg": "/MyProfile/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/MyProfile/index.html",
-    "main.af1493ad.css.map": "/MyProfile/static/css/main.af1493ad.css.map",
-    "main.23b05760.js.map": "/MyProfile/static/js/main.23b05760.js.map",
+    "main.21c56dff.css.map": "/MyProfile/static/css/main.21c56dff.css.map",
+    "main.96cef784.js.map": "/MyProfile/static/js/main.96cef784.js.map",
     "453.3f1fb51b.chunk.js.map": "/MyProfile/static/js/453.3f1fb51b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.af1493ad.css",
-    "static/js/main.23b05760.js"
+    "static/css/main.21c56dff.css",
+    "static/js/main.96cef784.js"
   ]
 }
