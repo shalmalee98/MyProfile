@@ -37,8 +37,12 @@ function About() {
           </Col>
         </Row> */}
         <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
+          Full-stack <strong className="purple">Skillset </strong>
         </h1>
+        <p className="section-lead">
+          Frontend, backend, cloud, healthcare interoperability, and AI/LLM
+          systems - the stack I ship with day to day.
+        </p>
 
         <Techstack />
 
