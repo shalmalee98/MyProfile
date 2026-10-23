@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MyProfile/static/css/main.705d9503.css",
-    "main.js": "/MyProfile/static/js/main.b37bec7f.js",
+    "main.css": "/MyProfile/static/css/main.af1493ad.css",
+    "main.js": "/MyProfile/static/js/main.23b05760.js",
     "static/js/453.3f1fb51b.chunk.js": "/MyProfile/static/js/453.3f1fb51b.chunk.js",
     "static/media/profile.jpg": "/MyProfile/static/media/profile.d040adeed1d2294df2bc.jpg",
     "static/media/leaf.png": "/MyProfile/static/media/leaf.ff2616f664c8c0ceab91.png",
@@ -17,12 +17,12 @@
     "static/media/puneuniversity_logo.jpg": "/MyProfile/static/media/puneuniversity_logo.55016bbce1afd394533b.jpg",
     "static/media/pre.svg": "/MyProfile/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/MyProfile/index.html",
-    "main.705d9503.css.map": "/MyProfile/static/css/main.705d9503.css.map",
-    "main.b37bec7f.js.map": "/MyProfile/static/js/main.b37bec7f.js.map",
+    "main.af1493ad.css.map": "/MyProfile/static/css/main.af1493ad.css.map",
+    "main.23b05760.js.map": "/MyProfile/static/js/main.23b05760.js.map",
     "453.3f1fb51b.chunk.js.map": "/MyProfile/static/js/453.3f1fb51b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.705d9503.css",
-    "static/js/main.b37bec7f.js"
+    "static/css/main.af1493ad.css",
+    "static/js/main.23b05760.js"
   ]
 }
