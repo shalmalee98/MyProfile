@@ -17,27 +17,29 @@ const experiences = [
     role: "Full-stack Engineer",
     location: "San Francisco, CA, US",
     headline:
-      "Own CarePortal end to end - modern React UI, APIs, and HIPAA-aware workflows for global healthcare and government partners.",
+      "Own Care Portal product and backend delivery end to end - React/TypeScript, Laravel APIs, LLM chat on AWS Bedrock, and HIPAA-aware clinical workflows for multi-region healthcare partners.",
     tags: [
       "React",
       "TypeScript",
-      "Node.js",
       "PHP",
       "Laravel",
-      "Livewire",
-      "HTML",
-      "CSS",
-      "TailwindCSS",
+      "AWS Bedrock",
+      "LLMs",
+      "OAuth2",
+      "FHIR",
+      "MySQL",
+      "Redis",
       "Docker",
-      "Git",
-      "AWS",
+      "Kubernetes",
       "HIPAA",
+      "Care Portal",
     ],
     bullets: [
-      "Lead development of CarePortal, the core product (React, TypeScript, Node.js, Laravel, Livewire, AWS) across multiple organizations, sites, and 10K+ patients and clinicians.",
-      "Led migration from a legacy system to a modern React application, improving performance and everyday UX for patients and care teams.",
-      "Shipped secure auth (OAuth2, MFA, SSO) and reusable UI architecture (Tailwind, Redux, Livewire), reducing render latency about 37% and strengthening compliance posture.",
-      "Built scalable APIs and reliability practices as the platform serves public-sector and healthcare partners worldwide.",
+      "Own Care Portal and backend delivery for 10,000+ patients and clinicians across 5+ organizations and 20+ sites, shipping 20+ clinical and reporting releases.",
+      "Work full stack across the React/TypeScript Care Portal and Laravel/PHP APIs - risk-engine correctness, invite-token/QR onboarding, audit-trail coverage, and clinician workflows that drive patient engagement.",
+      "Engineered a patient-facing LLM chatbot on AWS Bedrock, grounding responses in authorized patient context and streaming model output into structured clinical actions over real-time WebSockets.",
+      "Root-caused and fixed full-stack auth reliability issues spanning React and Laravel OAuth2 (refresh races, session edge cases), and redesigned frontend architecture/component patterns to raise developer velocity about 25%.",
+      "Integrate healthcare interoperability (Epic FHIR / SMART-on-FHIR prototypes), multi-region API patterns, and production observability - and use AI coding agents (Claude) as a force multiplier for debugging, feature tests, and platform documentation.",
     ],
     video: {
       id: "rLe2nmhtHGM",
@@ -87,8 +89,8 @@ const experiences = [
     role: "Software Engineer Intern",
     location: "Santa Clara, CA, US",
     headline:
-      "Made healthcare data easier to use - standard APIs linking patient records, lab results, and clinicians, plus cloud pipelines for safer flow of information.",
-    tags: ["FHIR", "REST APIs", "AWS", "EMR/EHR", "Healthcare data"],
+      "Full-stack healthcare interoperability - FHIR APIs linking patient records and clinicians, plus cloud pipelines for safer clinical data flow.",
+    tags: ["FHIR", "REST APIs", "AWS", "EMR/EHR", "Healthcare data", "Testing"],
     bullets: [
       "Enabled secure EMR and EHR access for 300+ clinicians using Roche APIs and FHIR-aligned REST standards.",
       "Contributed to a cloud-based data pipeline to streamline how clinical information moves between systems and stakeholders.",
@@ -104,10 +106,10 @@ const experiences = [
     role: "Software Developer",
     location: "Pune, India",
     headline:
-      "Backend-heavy platform work for supply-chain data exchange - stable services, real business transactions, and tight collaboration with design, QA, and product.",
-    tags: ["Python", "Kafka", "Elasticsearch", "React", "EDI"],
+      "Full-stack platform work for supply-chain data exchange - APIs, data pipelines, and internal React tooling shipped with design, QA, and product.",
+    tags: ["Python", "Kafka", "Elasticsearch", "React", "Redux", "EDI", "REST APIs"],
     bullets: [
-      "Built and maintained backend services for a platform that powers data exchange between supply chain partners at enterprise scale.",
+      "Built and maintained full-stack features for a platform that powers data exchange between supply chain partners at enterprise scale.",
       "Worked closely with design, testing, and product teams on dependable releases for high-volume transactional workloads.",
       "Delivered Python REST APIs with Elasticsearch and Kafka; internal React and Redux tooling; automated EDI workflows that cut manual work about 48%.",
       "Raised quality with Jest and process improvements, reducing critical defects about 90%.",
@@ -166,8 +168,8 @@ function Experience() {
               <strong className="purple">Experience</strong>
             </h1>
             <p className="experience-section-sub">
-              Tap a card to explore impact and tech - built for quick scanning and
-              deeper reads.
+              Full-stack product work across healthcare, enterprise, and research -
+              tap a card for impact, stack, and AI/LLM delivery details.
             </p>
             <VerticalTimeline
               className="experience-vertical-timeline"
