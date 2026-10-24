@@ -37,6 +37,7 @@ const projects = [
     description:
       "Collaborated on a low-code builder with a React UI and Java APIs. Users can create apps, drag and drop components (buttons, inputs, charts), style them, add behavior, then save, share, download, and run the application.",
     ghLink: "https://github.com/shalmalee98/Application-builder",
+    demoLink: "https://shalmalee98.github.io/Application-builder/",
   },
   {
     imgPath: pharmaChain,
